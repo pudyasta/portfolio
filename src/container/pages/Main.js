@@ -2,8 +2,9 @@ import React from "react";
 import PropTypes from "prop-types";
 import SwipeableViews from "react-swipeable-views";
 import { useTheme } from "@material-ui/core/styles";
+import { jumbotron } from "../assets";
 
-import { Home } from "../";
+import { Home, Experience, Expertice, Footer } from "../";
 import {
   Toolbar,
   Typography,
@@ -62,7 +63,7 @@ export default function FullWidthTabs() {
   return (
     <>
       <CssBaseline />
-      <AppBar color="transparent">
+      <AppBar color="secondary">
         <Toolbar>
           <div style={{ width: "100%" }}>
             <Box display="flex" justifyContent="center">
@@ -75,7 +76,9 @@ export default function FullWidthTabs() {
               >
                 <Tab label="Home" {...a11yProps(0)} />
                 <Tab label="Coding" {...a11yProps(1)} />
-                <Tab label="Item Three" {...a11yProps(2)} />
+                <Tab label="Photoraphic" {...a11yProps(2)} />
+                <Tab label="Achievments" {...a11yProps(3)} />
+                <Tab label="Social" {...a11yProps(4)} />
               </Tabs>
             </Box>
           </div>
@@ -87,13 +90,39 @@ export default function FullWidthTabs() {
         onChangeIndex={handleChangeIndex}
       >
         <TabPanel value={value} index={0} dir={theme.direction}>
-          <Home />
+          <Home
+            heading="pudyasta satria"
+            subHeading="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro reprehenderit obcaecati corporis natus sapiente a!"
+            background={jumbotron}
+          />
         </TabPanel>
         <TabPanel value={value} index={1} dir={theme.direction}>
-          Item Two
+          <Home
+            heading="Become a Programmer"
+            subHeading="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro reprehenderit obcaecati corporis natus sapiente a!"
+            background={jumbotron}
+          />
+          <Experience />
+          <Expertice />
+          <Footer />
         </TabPanel>
         <TabPanel value={value} index={2} dir={theme.direction}>
-          Item Three
+          <Home
+            heading="Photographer"
+            subHeading="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro reprehenderit obcaecati corporis natus sapiente a!"
+          />
+        </TabPanel>
+        <TabPanel value={value} index={3} dir={theme.direction}>
+          <Home
+            heading="Miles stone"
+            subHeading="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro reprehenderit obcaecati corporis natus sapiente a!"
+          />
+        </TabPanel>
+        <TabPanel value={value} index={4} dir={theme.direction}>
+          <Home
+            heading="Social"
+            subHeading="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro reprehenderit obcaecati corporis natus sapiente a!"
+          />
         </TabPanel>
       </SwipeableViews>
     </>

@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Main } from "./container";
 
 import { ThemeProvider } from "@material-ui/core";
 import { createMuiTheme } from "@material-ui/core/styles";
-import { yellow } from "@material-ui/core/colors/";
+
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const theme = createMuiTheme({
   typography: {
@@ -12,17 +14,20 @@ const theme = createMuiTheme({
   },
   palette: {
     primary: {
-      main: yellow[600],
-      contrastText: "#000",
+      main: "#000",
     },
     secondary: {
-      main: yellow[300],
+      main: "#fff",
     },
   },
   shadows: ["none"],
 });
 
 const App = () => {
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
   return (
     <>
       <ThemeProvider theme={theme}>
