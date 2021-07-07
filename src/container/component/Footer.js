@@ -18,7 +18,7 @@ const Footer = (props) => {
                 algMobile="center"
                 color="primary"
               >
-                Check my awesome projects on my own Github
+                {props.text}
               </Text>
             </Grid>
           </Grid>
@@ -33,9 +33,9 @@ const Footer = (props) => {
                   variant="contained"
                   color="primary"
                   fullWidth
-                  href="http://github.com/pudyasta"
+                  href={"http://" + props.to}
                 >
-                  Check
+                  {props.buttonText}
                 </Button>
               </div>
             </Grid>

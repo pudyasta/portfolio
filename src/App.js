@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import { Main } from "./container";
+import { Main, Coding, Navbar } from "./container";
 
 import { ThemeProvider } from "@material-ui/core";
 import { createMuiTheme } from "@material-ui/core/styles";
@@ -32,9 +32,13 @@ const App = () => {
     <>
       <ThemeProvider theme={theme}>
         <Router>
+          <Navbar />
           <Switch>
             <Route path="/" exact>
               <Main />
+            </Route>
+            <Route path="/coding">
+              <Coding />
             </Route>
           </Switch>
         </Router>
