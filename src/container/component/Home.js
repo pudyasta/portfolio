@@ -2,8 +2,16 @@ import React from "react";
 import { Grid } from "@material-ui/core";
 import Text from "../atom/Text";
 import Wrapper from "../atom/Wrapper";
+import { UserContext } from "../../App";
 
 const Home = (props) => {
+  const dispatch = React.useContext(UserContext);
+  React.useEffect(() => {
+    // dispatch({ type: "set-loading" });
+    // return setTimeout(() => {
+    //   dispatch({ type: "set-loading" });
+    // });
+  }, []);
   return (
     <>
       <Wrapper background={props.background} alignItems="center">

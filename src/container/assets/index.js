@@ -4,5 +4,7 @@ import computer from "./computer.jpg";
 import photograph from "./photograph.jpg";
 import exp from "./exp.png";
 import avatar from "./avatar.png";
+import sitani from "./sitani.png";
+import itdays from "./itdays.png";
 
-export { jumbotron, home, computer, photograph, exp, avatar };
+export { sitani, jumbotron, home, computer, photograph, exp, avatar, itdays };

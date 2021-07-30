@@ -36,7 +36,7 @@ const Experience = (props) => {
           </Grid>
           <Grid container items directon="row">
             <Grid item xs={12} sm={2}></Grid>
-            <Grid item xs={12} sm={8} alignItems="flex-end">
+            <Grid item xs={12} sm={8}>
               <div data-aos={"fade-up"}>
                 <Card>
                   <CardMedia

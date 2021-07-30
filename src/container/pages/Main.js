@@ -13,7 +13,7 @@ export default function Main() {
       />
       <About />
       <Footer
-        to="instagram.com"
+        to="instagram.com/pudyasta_satria"
         text="Connect with me on instagram"
         buttonText="Connect"
       />

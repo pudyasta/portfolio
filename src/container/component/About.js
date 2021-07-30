@@ -29,7 +29,7 @@ const About = () => {
     <>
       <Wrapper>
         <Grid container directon="column">
-          <Grid items container style={{ paddingTop: "10vh" }}>
+          <Grid item container style={{ paddingTop: "10vh" }}>
             <Grid item xs={12} sm={1}></Grid>
             <Grid item xs={12} sm={3}>
               <div data-aos={"fade-right"}>
@@ -49,21 +49,14 @@ const About = () => {
                 <Card className={classes.cardAbout}>
                   <CardContent>
                     <Grid container>
-                      <Grid items xs={12} sm={1}></Grid>
-                      <Grid items xs={12} sm={10}>
-                        <Typography
-                          variant="body2"
-                          color="secondary"
-                          gutterBottom
-                        >
-                          Word of the Day
-                        </Typography>
+                      <Grid item xs={12} sm={1}></Grid>
+                      <Grid item xs={12} sm={10}>
                         <Typography color="secondary" variant="h5" gutterBottom>
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Aspernatur,
+                          Yesterday is history, tomorrow is mystery, but today
+                          is a gift thats why it is called present
                         </Typography>
                         <Typography variant="body2" color="secondary">
-                          Word of the Day
+                          -Anonim
                         </Typography>
                       </Grid>
                     </Grid>
@@ -75,9 +68,9 @@ const About = () => {
               </div>
             </Grid>
           </Grid>
-          <Grid items container>
-            <Grid xs={12} sm={1}></Grid>
-            <Grid xs={12} sm={5}>
+          <Grid item container spacing={3}>
+            <Grid item xs={12} sm={1}></Grid>
+            <Grid item xs={12} sm={5}>
               <div data-aos={"fade-right"}>
                 <Card>
                   <CardContent>
@@ -103,7 +96,7 @@ const About = () => {
                 </Card>
               </div>
             </Grid>
-            <Grid xs={12} sm={5}>
+            <Grid item xs={12} sm={5}>
               <div data-aos={"fade-right"}>
                 <Card>
                   <CardContent>
@@ -129,7 +122,7 @@ const About = () => {
                 </Card>
               </div>
             </Grid>
-            <Grid xs={12} sm={1}></Grid>
+            <Grid item xs={12} sm={1}></Grid>
           </Grid>
         </Grid>
       </Wrapper>

@@ -24,7 +24,7 @@ const Footer = (props) => {
           </Grid>
           <Grid container items directon="row">
             <Grid item xs={12} sm={3}></Grid>
-            <Grid item xs={12} sm={6} alignItems="center">
+            <Grid item xs={12} sm={6}>
               <div
                 data-aos={"fade-up"}
                 data-aos-anchor-placement="bottom-bottom"

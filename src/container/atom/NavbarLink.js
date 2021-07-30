@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useContext, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import { makeStyles } from "@material-ui/core/styles";
+import { UserContext } from "../../App";
+
 const useStyles = makeStyles({
   navlink: {
     textDecoration: "none",
@@ -16,6 +18,7 @@ const useStyles = makeStyles({
 
 const NavbarLink = (props) => {
   const classes = useStyles();
+  const dispatch = useContext(UserContext);
   return (
     <>
       <NavLink
@@ -23,6 +26,7 @@ const NavbarLink = (props) => {
         to={props.to}
         activeClassName={classes.selected}
         className={classes.navlink}
+        // onClick={() => dispatch({ type: "set-loading" })}
       >
         {props.children}
       </NavLink>

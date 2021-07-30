@@ -1,24 +1,16 @@
 import React from "react";
-import {
-  Toolbar,
-  Box,
-  Tab,
-  Tabs,
-  AppBar,
-  CssBaseline,
-} from "@material-ui/core";
+import { Toolbar, Box, Tab, Tabs, AppBar } from "@material-ui/core";
 import NavbarLink from "../atom/NavbarLink";
 
 const Navbar = () => {
-  const [value, setValue] = React.useState(2);
+  const [value, setValue] = React.useState(false);
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
   return (
     <>
-      <CssBaseline />
-      <AppBar color="secondary">
+      <AppBar color="secondary" position="relative" elevation={0}>
         <Toolbar>
           <div style={{ width: "100%" }}>
             <Box display="flex" justifyContent="center">
@@ -35,6 +27,9 @@ const Navbar = () => {
                 </NavbarLink>
                 <NavbarLink to="/coding">
                   <Tab label="coding" />
+                </NavbarLink>
+                <NavbarLink to="/achievement">
+                  <Tab label="achievement" />
                 </NavbarLink>
               </Tabs>
             </Box>

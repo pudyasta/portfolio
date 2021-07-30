@@ -26,7 +26,6 @@ const Wrapper = (props) => {
   return (
     <>
       <CssBaseline />
-
       <div
         className={classes.jumbotron}
         style={{

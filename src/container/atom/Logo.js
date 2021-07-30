@@ -9,7 +9,7 @@ const Logo = (props) => {
         <Box>
           <span
             style={{ fontSize: "50px" }}
-            class="iconify"
+            className="iconify"
             data-icon={props.logo}
             data-inline="false"
           ></span>
